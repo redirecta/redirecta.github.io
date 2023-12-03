@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            var urlParams = new URLSearchParams(window.location.search);
+            var id = urlParams.get('id');
+
+            if (id) {
+                // Redirect to Steam URI with the specified ID
+                window.location.href = 'steam://url/https://steamcommunity.com/sharedfiles/filedetails/?id=' + id;
+            } else {
+                // Display a message or handle the case where ID is not present
+                document.body.innerHTML = 'Nothing to see here 😅';
+            }
+        };
+    </script>
+</head>
+<body>
+    <noscript>
+        <p>If you are not redirected, <a href="steam://url/https://steamcommunity.com/sharedfiles/filedetails/?id={{ YOUR_DEFAULT_ID }}">click here</a>.</p>
+    </noscript>
+</body>
+</html>
