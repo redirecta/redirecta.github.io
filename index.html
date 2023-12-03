@@ -3,6 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Redirecting...</title>
+    <style>
+        ::selection {
+            background-color: #00429a !important;
+            color: #d5d3d0 !important;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3b4042;
+        }
+
+        ::-webkit-scrollbar-corner {
+            background-color: #101213;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: #181b1c;
+            color: #9b958a;
+        }
+
+        :root {
+            --neutral-background: #0c0d0e;
+            --neutral-text: #c6c2bd;
+            --selection-background: #00429a;
+            --selection-text: #d5d3d0;
+        }
+
+        html, body {
+            border-color: #665f52;
+            color: #d5d3d0;
+        }
+
+        html, body {
+            background-color: #101213;
+        }
+
+        html {
+            color-scheme: dark !important;
+        }
+
+        html {
+            background-color: #101213 !important;
+        }
+    </style>
     <script>
         window.onload = function() {
             var urlParams = new URLSearchParams(window.location.search);
